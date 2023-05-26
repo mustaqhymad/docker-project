@@ -1,0 +1,28 @@
+version: "3"
+services:
+  ssc:
+    image: mustaqhymad/ssc:v1
+     port:
+       - "8080:80"
+     deploy:
+       replicas: 3    
+
+   inter:
+     image: mustaqhymad/inter:v1
+      port:
+       - "8081:80"
+      deploy:
+       replicas: 3
+  
+
+    
+   btech:
+     image: mustaqhymad/btech:v1
+      port:
+       - "8082:80"
+      deploy:
+       replicas: 3
+
+     
+      
+      
